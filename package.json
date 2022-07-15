@@ -1,0 +1,19 @@
+{
+  "name": "curso-cypress-intermediario",
+  "version": "1.0.0",
+  "description": "Testando APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Wleocadio/curso-cypress-intermediario.git"
+  },
+  "author": "Wellington Leocádio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wleocadio/curso-cypress-intermediario/issues"
+  },
+  "homepage": "https://github.com/Wleocadio/curso-cypress-intermediario#readme"
+}
