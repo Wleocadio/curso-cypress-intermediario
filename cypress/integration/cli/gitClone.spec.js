@@ -12,9 +12,8 @@ describe('Git Clone', () => {
     it('successfully', () => {
         cy.cloneViaSSH(project)
 
-        cy.readFile(`temp/${project.name}/README.md`)
-          .should('contain', `# ${project.name}`)
-          .and('contain', project.description) 
+        cy.readFile(`temp/${project.name}/README.md`).should('contain', `# ${project.name}`).and('contain', project.description) 
+
     });
 
 
