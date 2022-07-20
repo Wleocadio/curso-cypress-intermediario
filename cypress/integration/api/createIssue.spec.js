@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
-import { faker } from '@faker-js/faker'
-import data from '../../data/issue.js'
+//import { faker } from '@faker-js/faker'
+import data_issue from '../../data/issue.js'
 
 describe('Create Issue API', () => {
     it('successfuly', () => {
@@ -12,7 +12,7 @@ describe('Create Issue API', () => {
         //         description: faker.random.words(5)
         //     }    
         // }
-        var issue = data.issue()
+        var issue = data_issue.issue()
         
         cy.api_createIssue(issue)
           .then(response =>{

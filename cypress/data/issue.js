@@ -12,7 +12,7 @@ export default {
             title: faker.company.bsBuzz(),
             description: faker.random.words(5),
             project: {
-                name: faker.company.bsBuzz(),
+                name: `project-${faker.company.bsBuzz()}`,
                 description: faker.random.words(5)
             }
         }

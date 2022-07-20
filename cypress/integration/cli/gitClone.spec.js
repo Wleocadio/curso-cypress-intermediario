@@ -9,7 +9,7 @@ describe('Git Clone', () => {
         cy.api_createProject(project)
     });
 
-    it('successfully', () => {
+    it.skip('successfully', () => {
         cy.cloneViaSSH(project)
 
         cy.readFile(`temp/${project.name}/README.md`).should('contain', `# ${project.name}`).and('contain', project.description) 

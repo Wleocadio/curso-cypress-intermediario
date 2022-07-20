@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 
-const acessToken = Cypress.env('gitlab_access_token') // constante que recebe o valor o token que está configurado no cypress.env.json
-                                                      //para autorizar acesso via API
+const acessToken = Cypress.env('gitlab_access_token') // constante que recebe o valor o token que está configurado no cypress.env.json para autorizar acesso via API
+                                                      
 Cypress.Commands.add('api_createProject', project =>{
     cy.request({
         method: 'POST', // envia uma requisição para cadastrar um projeto
@@ -47,6 +47,6 @@ Cypress.Commands.add('api_createMilestone', (projectId, milestone) =>{
         method: "POST",
         url:`api/v4/projects/${projectId}/milestones?private_token=${acessToken}`, 
         body: {title: milestone.title}
-        
+
     })
 })

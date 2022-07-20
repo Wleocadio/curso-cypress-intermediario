@@ -8,7 +8,7 @@ export default {
         var data = {
         
             
-            name: faker.company.bsBuzz(),
+            name: `project-${faker.company.bsBuzz()}`,
             description: faker.random.words(5)
         
     }
