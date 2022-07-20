@@ -4,7 +4,8 @@
   "description": "Testando APIs",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open"
+    "Open": "npx cypress open",
+    "Run": "npx cypress run"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Wleocadio/curso-cypress-intermediario/issues"
   },
-  "homepage": "https://github.com/Wleocadio/curso-cypress-intermediario#readme"
+  "homepage": "https://github.com/Wleocadio/curso-cypress-intermediario#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^7.3.0",
+    "cypress": "^9.7.0",
+    "faker": "^6.6.6"
+  }
 }
