@@ -14,7 +14,7 @@ Cypress.Commands.add('api_createProject', project =>{
 
     })
 
-})
+}) 
 
 Cypress.Commands.add('api_createIssue', issue => {
     cy.api_createProject(issue.project) // chama o comando de criação de projeto, passando os dodos pelo "issue.project"

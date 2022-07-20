@@ -14,7 +14,7 @@ describe('Git Clone', () => {
 
         cy.readFile(`temp/${project.name}/README.md`)
           .should('contain', `# ${project.name}`)
-          .and('contain', project.description)
+          .and('contain', project.description) 
     });
 
 
